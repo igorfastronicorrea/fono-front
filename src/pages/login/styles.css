@@ -3,11 +3,13 @@
     max-width: 1120px;
     height: 100vh;
     margin: 0 auto;
-
     display: flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    margin-left: 95px;
+    margin-right: 95px;
+    background-color: aqua;
 }
 
 .logon-container section.form{
