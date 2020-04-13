@@ -17,14 +17,14 @@ class SideNav extends React.Component {
                     key: 1 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
                 },
                 {
-                    path: '/main',
-                    name: 'Main',
+                    path: '/exercises',
+                    name: 'Exercises',
                     css: 'fa fa-fw fa-clock-o',
                     key: 2
                 },
                 {
-                    path: '/NoMatch',
-                    name: 'NoMatch',
+                    path: '/create-exercise',
+                    name: 'Create Exercises',
                     css: 'fa fa-eercast',
                     key: 3
                 },
@@ -74,7 +74,7 @@ class NavItem extends React.Component {
             <StyledNavItem active={active}>
                 <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
                     <NavIcon></NavIcon>
-                    <h1 font-size="2px">Teste</h1>
+                    <h1 font-size="2px">{this.props.name}</h1>
                 </Link>
             </StyledNavItem>
         );

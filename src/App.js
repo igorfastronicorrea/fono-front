@@ -9,7 +9,8 @@ import Sidebar from './components/Sidebar';
 import 'font-awesome/css/font-awesome.css'
 
 import Login from './pages/login'
-import Main from './pages/main'
+import Exercises from './pages/exercises'
+import CreateExercise from './pages/createexercise'
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { Test } from './Test'
@@ -24,7 +25,8 @@ const App = () => (
 
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path="/main" component={Main} />}
+          <Route exact path="/exercises" component={Exercises} />}
+          <Route exact path="/create-exercise" component={CreateExercise} />}
         </Switch>
 
       </Router>
